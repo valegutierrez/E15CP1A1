@@ -1,18 +1,43 @@
-# Actividad 029 - Autenticación manual
+# Actividad Presencial Semana 15
+## Autenticación con Devise (Experiencia presencial 2 C29)
 
-- Para poder realizar este actividad debes haber realizado los cursos previos junto con los videos online correspondientes a la experiencia 15.
+Para poder realizar este actividad debes haber realizado los cursos previos junto con los videos online correspondientes a la experiencia 15.
 
-### El objetivo de esta actividad es la implementación de un Sistema de autenticación manual para permitir el logeo de un usuario en una aplicación.
+El objetivo de esta actividad es la implementación de un Sistema de autenticación manual para permitir el logeo de un usuario en una aplicación.
 
-## Ejercicio 1:
+## Setup:
 
-> En este ejercicio se utilizó la gema carrierwave para el manejo de archivos por lo que antes de empezar tendrás que instalar imagemagik en tu computador. Si ya la has instalado antes, omite este paso.
-> 
-> Más informacion en <a href="https://github.com/carrierwaveuploader/carrierwave/tree/v1.1.0">Documentación carrierwave</a>
->
-> **OSX** ```brew install imagemagick``` 
->
-> **Ubuntu** ```sudo apt-get update``` y luego ```sudo apt-get install imagemagick``` 
+En esta actividad se utilizó la gema carrierwave para el manejo de archivos por lo que antes de empezar tendrás que instalar imagemagik en tu computador. Si ya lo has instalado antes, omite este paso.
+
+Para saber si ya está instalado vamos a escribir:
+
+~~~
+convert -version
+~~~
+
+Si obtenemos un mensaje de command not found entonces debemos instalar la herramienta.
+
+### Instalando ImageMagick
+
+En **OSX**:
+
+~~~
+brew update
+brew install imagemagick
+~~~
+
+EN **Ubuntu**: 
+
+~~~
+sudo apt-get update
+sudo apt-get install imagemagick
+~~~
+
+Más información en <a href="https://github.com/carrierwaveuploader/carrierwave/tree/v1.1.0">Documentación carrierwave</a>
+
+## Comienza la actividad
+
+Pictory es una aplicación para que diversos usuarios guarden sus historias y puedan compartirlas, pero esta aplicación no está terminada, el cliente necesita:
 
 - Crear un modelo **user** con los campos *name* (string), *email* (string) y *password* (string).
 
