@@ -1,5 +1,5 @@
 # Experiencia 15 - Actividad Presencial I
-## Autenticación desde cero
+## Autenticación desde cero
 
 Para poder realizar este actividad debes haber realizado los cursos previos junto con los videos online correspondientes a la experiencia 15.
 
