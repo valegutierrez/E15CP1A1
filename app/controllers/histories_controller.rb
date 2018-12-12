@@ -5,6 +5,9 @@ class HistoriesController < ApplicationController
   # GET /histories.json
   def index
     @histories = History.all
+    if helpers.logged?
+      @histories = helpers.current_user.histories
+    end
   end
 
   # GET /histories/1
@@ -25,7 +28,7 @@ class HistoriesController < ApplicationController
   # POST /histories.json
   def create
     @history = History.new(history_params)
-
+    @history.user = helpers.current_user
     respond_to do |format|
       if @history.save
         format.html { redirect_to @history, notice: 'History was successfully created.' }
